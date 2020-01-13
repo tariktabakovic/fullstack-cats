@@ -1,12 +1,12 @@
 -- what do we want to know about owners?
-create table owners {
+create table owners (
     id serial primary key,
     name text,
     phone_number varchar(20)
-};
+);
 
 -- what do we want to know about pets?
-create table pets {
+create table pets (
     id serial primary key,
     name text, 
     -- if you wanted to limit the number of characters use varchar(10) which stands
@@ -19,7 +19,7 @@ create table pets {
     -- if pets have one and only one, then you put the foreign key right HERE. 
     owner_id integer references owners (id)
     -- the integer references the id in the table 'owners'.
-};
+);
 
 
 -- this will demo many-to-many

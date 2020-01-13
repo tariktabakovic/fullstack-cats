@@ -1,5 +1,5 @@
 insert into owners
-    (name, phonenumber)
+    (name, phone_number)
 values
     ('Chris', '678-200-3000'),
     ('Aylor', '404-234-0101');
